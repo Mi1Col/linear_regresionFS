@@ -1,2 +1,7 @@
 DELETE.md
 .venv
+*.aux
+*.idx
+*.log
+*.gz
+*.toc

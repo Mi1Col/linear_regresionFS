@@ -4,6 +4,7 @@
 \usepackage{graphicx}
 \usepackage{listings}
 
+
 \title{
 	Understanding Linear Regression Through a Single Neuron\\
 	{\large From Mathematical Foundations to Python Implementation}
@@ -13,4 +14,46 @@
 
 \begin{document}
 	\maketitle
+	\newpage
+	% Aqui irá el indice que se irá creando a medida que voy poniendo
+	% secciones, supongo.
+	\tableofcontents
+	\newpage
+	
+	% Empezamos con el documento de verdad
+	
+	% La introduccion
+	\section{Introduction}
+		\subsection{What is the project?}
+			This project consists of a single-layer perceptron capable of performing linear regression given a dataset of X and Y points, the neuron automatically finds the best-fitting straight line that represents the trend of the data.\\
+			\\
+			To achieve this the neuron utilizes the Gradient Descent optimization algorithm. This method minimizes the prediction error in each iteration by adjusting the neuron internal weight and bias until the model achieves the most accurate linear relationship possible.\\
+		\subsection{Project goals}
+			This project goal is to understand and implement the math behind machine learning, using its simplest building block: a single neuron.
+			The neuron will be trained to perform linear regression, and, ultimately, to accurately predict the values of $y$ for previously unseen values of $x$
+	\section{Linear Regression}
+		\subsection{What is linear regression?}
+			linear regression is a model that estimates the relationship between a dependent variable and one or more explanatory variables independent variable.
+		\subsection{The meaning of the variables}
+			The neuron has two variables:
+				\begin{enumerate}
+					\item Weight: $w$
+					\item Bias: $b$
+				\end{enumerate}
+			To do the prediction we will use:\\
+			$$\hat{y_i}=wx_i+b$$
+			So $w$ will be the slope of the line, and $b$ will be the y-intercept of the line
+	\section{The Neuron}
+		\subsection{How does it work?}
+			The neuron receives an input, then passes it through a function and the output of the function is the prediction.
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.5\textwidth]{./img/Single Neuron Schem}
+				\caption{Schematic of how does the neuron  a prediction}
+				\label{single_neuron_schem}
+			\end{figure}
+		\subsection{Why a single neuron can perform linear regression}
+			A single neuron can do linear regression because as seen in Fig.~\ref{single_neuron_schem} the intern structure of the neuron is exactly the equation of a straight line.
+		\section{Measuring the error}
+			
 \end{document}
